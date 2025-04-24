@@ -1,0 +1,104 @@
+/* Video Background */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  /* App Container */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .weather-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1;
+  }
+  
+  input, button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* City Heading */
+  #city-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    background-color: #ffc107;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  
+  /* Clock */
+  #clock {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Weather Info */
+  .weather-info {
+    margin-top: 20px;
+  }
+  
+  #weather-icon {
+    margin-top: 20px;
+  }
+  
+  .back-button-container {
+    margin-top: 20px;
+  }
+  
+  /* Aesthetic Loading Spinner */
+  .loading-spinner {
+    margin-top: 20px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 8px solid #f3f3f3; /* Light gray background */
+    border-top: 8px solid #3498db; /* Blue color for spinner */
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    text-align: center;
+    line-height: 60px;
+    color: #3498db;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Animation for the spinner */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

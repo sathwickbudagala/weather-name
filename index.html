@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Video Background -->
+  <video autoplay muted loop id="bg-video">
+    <source src="cloud.mp4" type="video/mp4" />
+  </video>
+
+  <!-- Weather App Container -->
+  <div class="weather-container">
+    <input type="text" id="city" placeholder="Enter city name" />
+    <button id="getWeather">Get Weather</button>
+
+    <div id="clock"></div>
+    <div id="city-heading"></div>
+
+    <!-- Weather Info -->
+    <div class="weather-info">
+      <p id="temperature"></p>
+      <p id="description"></p>
+      <p id="humidity"></p>
+      <p id="wind-speed"></p>
+    </div>
+
+    <div id="weather-icon"></div>
+
+    <!-- Aesthetic Loading Spinner -->
+    <div id="loading" class="loading-spinner" style="display: none;">Loading...</div>
+
+    <!-- Back Button -->
+    <div class="back-button-container">
+      <button id="searchAgain" style="display: none;">Search Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
